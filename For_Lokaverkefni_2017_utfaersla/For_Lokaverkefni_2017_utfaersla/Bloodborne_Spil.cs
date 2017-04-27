@@ -13,6 +13,7 @@ namespace For_Lokaverkefni_2017_utfaersla
              
         public void Generate_Deck()
         {
+            
             hunter[0] = new Bloodborne("", 1, 2, 3, 4, 5, 6);
             hunter[1] = new Bloodborne("", 1, 2, 3, 4, 5, 6);
             hunter[2] = new Bloodborne("", 1, 2, 3, 4, 5, 6);
