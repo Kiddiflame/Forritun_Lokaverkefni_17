@@ -9,7 +9,7 @@ namespace For_Lokaverkefni_2017_utfaersla
 {
     class Pokemon_Spil
     {
-        Pokemon[] pokemon = new Pokemon[52];
+        public Pokemon[] pokemon = new Pokemon[52];
 
         public void Generate_Deck()
         {
