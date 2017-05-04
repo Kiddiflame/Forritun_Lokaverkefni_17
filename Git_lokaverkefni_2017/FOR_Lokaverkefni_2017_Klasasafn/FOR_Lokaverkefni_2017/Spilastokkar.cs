@@ -15,6 +15,9 @@ namespace FOR_Lokaverkefni_2017
         private int stat2;
         private int stat3;
         private int stat4;
+        private int stat5;
+        private int stat6;
+        private int[] stats;
         private string id;
 
         public string ID
@@ -30,10 +33,6 @@ namespace FOR_Lokaverkefni_2017
             }
         }
 
-        public int[] Cards
-        {
-            
-        }
         
         public int Stat1
         {
@@ -88,16 +87,56 @@ namespace FOR_Lokaverkefni_2017
             }
         }
 
-        public Spilastokkar(string ID, int[]{Stat1, Stat2, Stat3, Stat4})   
+        public int Stat5 
+        {
+            get
+            {
+                return stat5;
+            }
+            set
+            {
+                stat5 = value;
+            }
+        }
+
+        public int Stat6
+        {
+            get
+            {
+                return stat6;
+            }
+            set
+            {
+                stat6 = value;
+            }
+        }
+
+        public int[] Stats
+        {
+            get
+            {
+                return stats;
+            }
+        }
+        public Spilastokkar(string ID, int[] stats)   
         {
             ID = id;
-            Stat1 = stat1;
-            Stat2 = stat2;
-            Stat3 = stat3;
-            Stat4 = stat4;
+            Stat1 = stats[0];
+            Stat2 = stats[1];
+            Stat3 = stats[2];
+            Stat4 = stats[3];
+            Stat5 = stats[4];
+            Stat6 = stats[5];
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
         }
 
         }
+
+   
 
 
     }

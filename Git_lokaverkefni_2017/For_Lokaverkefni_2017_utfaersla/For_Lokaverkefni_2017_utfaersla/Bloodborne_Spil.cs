@@ -10,7 +10,34 @@ namespace For_Lokaverkefni_2017_utfaersla
     class Bloodborne_Spil
     {
          Bloodborne[] hunter = new Bloodborne[52];
-             
+         double[] AVG = new double[6];
+         public Bloodborne_Spil()
+         {
+             Generate_Deck();
+             double[] AVG1 = new double[52];
+             double[] AVG2 = new double[52];
+             double[] AVG3 = new double[52];
+             double[] AVG4 = new double[52];
+             double[] AVG5 = new double[52];
+             double[] AVG6 = new double[52];
+             for (int i = 0; i < 52; i++)
+             {
+                 AVG1[i] = hunter[i].Stat1;
+                 AVG2[i] = hunter[i].Stat2;
+                 AVG3[i] = hunter[i].Stat3;
+                 AVG4[i] = hunter[i].Stat4;
+                 AVG5[i] = hunter[i].Stat5;
+                 AVG6[i] = hunter[i].Stat6; 
+             }
+
+             AVG[0] = AVG1.Average();
+             AVG[1] = AVG2.Average();
+             AVG[2] = AVG3.Average();
+             AVG[3] = AVG4.Average();
+             AVG[4] = AVG5.Average();
+             AVG[5] = AVG6.Average();
+
+         }
         public void Generate_Deck()
         {
             
